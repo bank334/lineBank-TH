@@ -49,9 +49,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"✟Ƥɾøтøтуρє✟一�:緑 BOTS\n\nCreator : Http://line.me/ti/p/~muhmursalind",
+    'message':"สวัสดียินดีที่ได้รู้จัก\nHttp://line.me/ti/p/~bank60.com",
     "lang":"JP",
-    "comment":"Auto Like By ✟Ƥɾøтøтуρє✟一�:緑 BOTS\n\nCreator : Http://line.me/ti/p/~muhmursalind",
+    "comment":"Auto Like By สวัสดียินดีที่ได้รู้จัก\nHttp://line.me/ti/p/~bank60.com",
     "commentOn":False,
     "likeOn":False,
     "invite":{},
@@ -282,7 +282,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text.lower()  == 'help':
+            elif msg.text.lower()  == 'คำสั่ง':
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
@@ -876,7 +876,7 @@ def bot(op):
                         except:
                             cl.sendText(msg.to,"Error")
             
-            if msg.text.lower() in ["mention"]:
+            if msg.text.lower() in ["แท็ค"]:
                  group = cl.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
